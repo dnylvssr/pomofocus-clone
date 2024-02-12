@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #862e9c;
+}
+
+header {
+  margin: 0 auto;
+  width: 100rem;
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid #6b257d;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #fff;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.navigation {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.btn-nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: #cc5de8; */
+  /* background-color: #be4bdb; */
+  fill: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-nav:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: #ae3ec9; */
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6rem;
+}
+
+.tasks {
+  justify-self: end;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  padding: 2rem 4rem;
+}
+
+.task-header {
+  border-bottom: 0.1rem solid #fff;
+}
+
+.task-current {
+  width: 60rem;
+}
+
+.timer {
+  /* width: 60rem; */
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2rem 4rem;
+  border-radius: 0.8rem;
+}
+
+.timer-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-timer {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.btn-timer:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-timer--current {
+  background-color: #862e9c;
+}
+
+.btn-timer--current:hover {
+  background-color: #6b257d;
+}
+
+.timer-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.8rem;
+  padding: 2rem;
+}
+
+.btn-start {
+  margin-top: 0.6rem;
+  color: #862e9c;
+  font-size: 2rem;
+  padding: 1.2rem 3.6rem;
+  font-weight: 600;
+}
+
+.btn-start:hover {
+  color: #fff;
+  background-color: #862e9c;
+}
