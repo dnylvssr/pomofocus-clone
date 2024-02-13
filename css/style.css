@@ -1,3 +1,13 @@
+:root {
+  --color-text: #fff;
+  --color-bg: #862e9c;
+  --color-content-bg: rgba(255, 255, 255, 0.3);
+  --color-nav-hover: rgba(255, 255, 255, 0.4);
+  --color-shadow: #6b257d;
+  --color-shadow: #501c5e;
+  --color-highlight: rgba(255, 255, 255, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +23,7 @@
   border: none;
   border-radius: 0.6rem;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: var(--color-text);
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -24,15 +34,15 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #fff;
-  background-color: #862e9c;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 header {
   margin: 0 auto;
   width: 100rem;
   padding: 2rem 0;
-  border-bottom: 0.1rem solid #6b257d;
+  border-bottom: 0.1rem solid var(--color-shadow);
   margin-bottom: 6rem;
   display: flex;
   justify-content: space-between;
@@ -46,7 +56,7 @@ header {
 .logo-icon {
   width: 2.4rem;
   height: 2.4rem;
-  fill: #fff;
+  fill: var(--color-text);
 }
 
 .logo-text {
@@ -60,18 +70,18 @@ header {
 }
 
 .btn-nav {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-content-bg);
   /* background-color: #cc5de8; */
   /* background-color: #be4bdb; */
-  fill: rgba(255, 255, 255, 0.8);
-  color: rgba(255, 255, 255, 0.8);
+  fill: var(--color-highlight);
+  color: var(--color-highlight);
 }
 
 .btn-nav:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--color-nav-hover);
   /* background-color: #ae3ec9; */
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
+  fill: var(--color-text);
+  color: var(--color-text);
 }
 
 .btn-icon {
@@ -95,14 +105,20 @@ main {
 }
 
 .task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-heading {
   font-size: 3.2rem;
   font-weight: 600px;
 }
 
 .task-current {
   /* min-width: inherit; */
-  border-bottom: 0.1rem solid #fff;
-  border-top: 0.1rem solid #fff;
+  border-bottom: 0.1rem solid var(--color-text);
+  border-top: 0.1rem solid var(--color-text);
   padding: 2rem 0;
   margin-top: 2rem;
   font-size: 1.8rem;
@@ -115,29 +131,35 @@ main {
 .task-name {
 }
 
-.btn-task-complete {
+.task-attributes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-task {
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  fill: #bbb;
+  fill: var(--color-text);
   transition: all 0.4s;
 }
 
-.btn-task-complete:hover {
-  fill: #fff;
+.btn-task:hover {
+  fill: var(--color-shadow);
 }
 
-.btn-task-complete .btn-icon {
-  width: 3.2rem;
-  height: 3.2rem;
+.btn-task .btn-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .timer {
   /* width: 60rem; */
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-content-bg);
   padding: 2rem 4rem;
   border-radius: 0.8rem;
 }
@@ -155,15 +177,15 @@ main {
 }
 
 .btn-timer:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-content-bg);
 }
 
 .btn-timer--current {
-  background-color: #862e9c;
+  background-color: var(--color-bg);
 }
 
 .btn-timer--current:hover {
-  background-color: #6b257d;
+  background-color: var(--color-shadow);
 }
 
 .timer-counter {
@@ -177,13 +199,13 @@ main {
 
 .btn-start {
   margin-top: 0.6rem;
-  color: #862e9c;
+  color: var(--color-bg);
   font-size: 1.8rem;
   padding: 1.2rem 3.6rem;
   font-weight: 600;
 }
 
 .btn-start:hover {
-  color: #fff;
-  background-color: #862e9c;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
