@@ -81,6 +81,7 @@ header {
 
 main {
   margin: 0 auto;
+  width: 100rem;
   display: grid;
   grid-template-columns: auto auto;
   gap: 6rem;
@@ -89,15 +90,48 @@ main {
 .tasks {
   justify-self: end;
   /* background-color: rgba(255, 255, 255, 0.3); */
-  padding: 2rem 4rem;
+  padding: 2rem 0;
+  width: 60rem;
 }
 
 .task-header {
-  border-bottom: 0.1rem solid #fff;
+  font-size: 3.2rem;
+  font-weight: 600px;
 }
 
 .task-current {
-  width: 60rem;
+  /* min-width: inherit; */
+  border-bottom: 0.1rem solid #fff;
+  border-top: 0.1rem solid #fff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-name {
+}
+
+.btn-task-complete {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  fill: #bbb;
+  transition: all 0.4s;
+}
+
+.btn-task-complete:hover {
+  fill: #fff;
+}
+
+.btn-task-complete .btn-icon {
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .timer {
@@ -144,7 +178,7 @@ main {
 .btn-start {
   margin-top: 0.6rem;
   color: #862e9c;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1.2rem 3.6rem;
   font-weight: 600;
 }
