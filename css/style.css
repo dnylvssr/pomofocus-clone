@@ -93,7 +93,7 @@ main {
   margin: 0 auto;
   width: 100rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 6rem;
 }
 
@@ -101,7 +101,8 @@ main {
   justify-self: end;
   /* background-color: rgba(255, 255, 255, 0.3); */
   padding: 2rem 0;
-  width: 60rem;
+  /* width: 60rem; */
+  width: 100%;
 }
 
 .task-header {
@@ -145,6 +146,9 @@ main {
   cursor: pointer;
   fill: var(--color-text);
   transition: all 0.4s;
+
+  display: flex;
+  align-items: center;
 }
 
 .btn-task:hover {
